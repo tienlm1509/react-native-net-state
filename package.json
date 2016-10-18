@@ -1,6 +1,6 @@
 {
   "name": "react-native-net-state",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "networking status",
   "main": "index.js",
   "scripts": {
