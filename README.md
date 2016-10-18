@@ -2,6 +2,7 @@
 
 #### This package is now deprecated. [Networking](https://facebook.github.io/react-native/docs/network.html) should be used instead
 
+![](https://raw.githubusercontent.com/FaridSafi/react-native-gifted-spinner/master/screenshot/screenshot.png)
 
 ### Example
 
@@ -12,11 +13,7 @@ import NetState from 'react-native-net-state';
 class Run extends Component {
   render() {
     return (
-      <View style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}>
+      <View style={{flex: 1}}>
         <NetState message="No internet access"/>
       </View>
     );
