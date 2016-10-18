@@ -11,7 +11,7 @@ class NetState extends Component {
 
     this.state = {
       conected: false,
-      message: props.message !== undefined ? props.message : 'No internet access'
+      message: props.message || 'No internet access'
     };
   }
 
@@ -43,8 +43,8 @@ class NetState extends Component {
         style={[styles.modal]}
         onRequestClose={() => {}}
       >
-        <View style={[styles.message, messageIOS]}>
-          <Text style={[styles.messageText]}>{this.state.message}</Text>
+        <View style={[styles.message, messageIOS, this.props.style || {}]}>
+          <Text style={[styles.messageText, this.props.styleText || {}]}>{this.state.message}</Text>
         </View>
 
       </Modal>
