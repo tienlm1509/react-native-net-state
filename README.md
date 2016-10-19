@@ -26,5 +26,6 @@ module.exports = Run;
 ```npm install react-native-net-state --save```
 
 ### Props
+- `message` you can customize message
 - `style` you can customize styles box
 - `styleText` you can customize styles message
