@@ -1,6 +1,6 @@
 {
   "name": "react-native-net-state",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "networking status",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,10 @@
   "keywords": [
     "react",
     "native",
-    "networking"
+    "networking",
+    "net",
+    "state",
+    "netInfo"
   ],
   "author": "tienlm1509@gmail.com",
   "license": "ISC",
