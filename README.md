@@ -4,7 +4,7 @@
 
 ### Setting
 
-#### Android
+- **`Android`**:
 ```
 To request network info, you need to add the following line to your app's
 AndroidManifest.xml:
