@@ -10,7 +10,6 @@ To request network info, you need to add the following line to your app's
 AndroidManifest.xml:
 
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
 Asynchronously determine if the device is connected and details about that connection.
 ```
 
