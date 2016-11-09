@@ -17,19 +17,19 @@ class NetState extends Component {
 
   componentDidMount() {
     NetInfo.isConnected.fetch().then(isConnected => {
-      this.setState({conected: isConnected});
+      this.setState({conected: !isConnected});
     });
 
     NetInfo.isConnected.addEventListener(
       'change',
       (isConnected) => {
-        this.setState({conected: isConnected});
+        this.setState({conected: !isConnected});
       }
     );
   }
 
-  componentWillReceiveProps(props) {
-
+  shouldComponentUpdate(nextProps, nextState){
+    return this.state.conected !== nextState.conected;
   }
 
   render() {
@@ -39,7 +39,7 @@ class NetState extends Component {
       <Modal
         animationType={"none"}
         transparent={true}
-        visible={!this.state.conected}
+        visible={this.state.conected}
         style={[styles.modal]}
         onRequestClose={() => {}}
       >
